@@ -1,0 +1,4 @@
+mcstatus
+requests
+python-telegram-bot
+pyyaml

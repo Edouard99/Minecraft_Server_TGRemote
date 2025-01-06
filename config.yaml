@@ -1,0 +1,8 @@
+server_ip: "127.0.0.1"  # Local or remote IP
+server_port: 25565
+server_start_cmd: "screen -dmS minecraft java -Xms1G -Xmx2G -jar minecraft_server.jar nogui"
+server_stop_cmd: "screen -S minecraft -p 0 -X stuff 'stop\n'"
+server_dir: "YOURSEVERPATH"  # Server directory
+status_check_interval: 1  # Interval to check status in seconds
+status_timeout: 20  # Timeout for status confirmation in seconds
+bot_api_token: "YOURTOKEN"  # Replace with your bot token
