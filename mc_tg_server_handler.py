@@ -51,6 +51,7 @@ def get_server_status_verbose():
             f"✅ *Server is Online!*\n"
             f"👥 Players: {status.players.online}/{status.players.max}\n"
             f"🌍 Public IP: `{public_ip}`\n"
+            f"🔌 Server Port: {SERVER_PORT}"
             f"📶 Ping: {status.latency:.2f} ms"
         )
     except Exception:
