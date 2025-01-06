@@ -1,7 +1,6 @@
-
 # Minecraft Telegram Server Handler
 
-A simple Python script to control a Minecraft server through a Telegram bot. This script allows you to start, stop, restart, and check the status of your Minecraft server using commands sent through Telegram.
+A simple Python script to control a Minecraft server through a Telegram bot on a unix plateform. This script allows you to start, stop, restart, and check the status of your Minecraft server using commands sent through Telegram.
 
 ---
 
@@ -24,6 +23,14 @@ A simple Python script to control a Minecraft server through a Telegram bot. Thi
    - Download the Minecraft server `.jar` file and documentation from the [official Minecraft website](https://www.minecraft.net/en-us/download/server).
    - Follow the instructions provided by Minecraft to set up your server.
    - Make sure to set the `server_dir` value in `config.yaml` to the directory where your Minecraft server is installed.
+
+3. **Install Screen Utility**:
+   - The script uses the `screen` command to manage the Minecraft server in a detached session. Install `screen` on your system:
+
+     ```bash
+     sudo apt update && sudo apt upgrade -y
+     sudo apt install screen -y
+     ```
 
 ---
 
@@ -48,13 +55,8 @@ cd minecraft-tg-server-handler
 
 2. Activate the virtual environment:
 
-   - **Linux/Mac**:
      ```bash
      source venv/bin/activate
-     ```
-   - **Windows**:
-     ```bash
-     .\venv\Scripts\activate
      ```
 
 ---
